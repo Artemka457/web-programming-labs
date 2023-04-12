@@ -32,8 +32,8 @@ a {
 }
 
 a:visited {
-    color: blueviolet;
-    background-color: moccasin;
+    color: green;
+    text-decoration: underline;
 }
 
 a:hover {
@@ -41,6 +41,8 @@ a:hover {
     text-decoration: underline;
     background-color: white;
     font-weight: bold;
+    text-shadow: 2.5px 1.5px 2px gray;
+    transition: 0.3s;
 }
 
 a:active {
