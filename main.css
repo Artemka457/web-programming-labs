@@ -21,12 +21,9 @@ footer {
     text-align: right;
 }
 
-a {
-    color: green;
-    text-decoration: none;
+a:hover {
+    color: red;
+    text-decoration: underline;
+    background-color: white;
 }
 
-a {
-    color: green;
-    text-decoration: none;
-}
