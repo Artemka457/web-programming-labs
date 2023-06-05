@@ -31,7 +31,16 @@
             let input = document.getElementById('user-number')
             let userNumber = parseInt(input.value)
             let message = document.getElementById('result')
-            if(userNumber > number) {
+            if (isNaN(userNumber)){
+                 message.innerHTML = 'Вы не ввели число'
+             }
+             else if(userNumber > 100) {
+                 message.innerHTML = 'Число должно быть в диапазоне от 1 до 100!'
+             }
+             else if (userNumber < 1) {
+                 message.innerHTML = 'Число должно быть в диапазоне от 1 до 100!'
+             }
+             else if(userNumber > number) {
                 message.innerHTML = 'Вы ввели слишком большое число'
             }
             else if (userNumber < number) {
@@ -59,6 +68,9 @@
             screens[2].style.display = 'none';
             screens[1].style.display = 'block';
             count = 0;
+            let input = document.getElementById('user-number');
+             input.value = '';
+             document.getElementById ('result').innerHTML = ''
         }
     </script>
  </head>
